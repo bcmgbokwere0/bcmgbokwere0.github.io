@@ -6,4 +6,70 @@
 .listblock ul li a:hover {
     background: lightblue url('https://github.com/bcmgbokwere0')  3px 170px;
 }
+/* Messed up Code for hyperlink ul, fix later ^ */
 
+.container {
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'content content photo photo'
+    'socials socials socials socials'
+    'experience experience experience experience'
+    'projects projects projects projects'
+    'footer footer footer footer';
+    gap: 1rem;
+}
+
+.header,
+.content,
+.socials,
+.experience,
+.photo,
+.projects,
+.footer {
+border: 2px solid #917FB3;
+padding: 1rem;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+}
+
+.content {
+    grid-area: content;
+}
+
+.socials {
+    grid-area: socials;
+}
+
+.experience {
+    grid-area: experience;
+}
+
+.photo {
+    grid-area: photo
+}
+.projects {
+    grid-area: projects;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+@media(max-width: 1200px) {
+    .container  {
+        grid-template-areas:
+        'header'
+        'content'
+        'socials'
+        'experience'
+        'photo'
+        'projects'
+        'footer'
+
+    }
+}
