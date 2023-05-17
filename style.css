@@ -83,7 +83,7 @@ color: blueviolet;
     text-align: center;
 }
 
-@media(max-width: 575px) {
+@media(max-width: 1200px) {
     .container  {
         grid-template-areas:
         'header'
