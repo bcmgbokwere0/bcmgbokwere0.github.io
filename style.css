@@ -1,18 +1,8 @@
-.listblock ul li a {
-    padding:5px 30px 5px 10px;
-    display: block;
-}
-
-.listblock ul li a:hover {
-    background: lightblue url('https://github.com/bcmgbokwere0')  3px 170px;
-}
-/* Messed up Code for hyperlink ul, fix later ^ */
-
 .container {
     display: grid;
     grid-template-areas:
-    'header header header header'
-    'content content photo photo'
+    'header header header margin'
+    'content content content photo'
     'socials socials socials socials'
     'experience experience experience experience'
     'projects projects projects projects'
@@ -21,6 +11,7 @@
 }
 
 .header,
+.margin,
 .content,
 .socials,
 .experience,
@@ -36,6 +27,23 @@ padding: 1rem;
     text-align: center;
 }
 
+.margin ul li {
+    float: right;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.margin ul li a {
+    display:block;
+    color: black;
+    padding: 0.8rem;
+    text-decoration: none;
+}
+
+.margin ul li a:hover {
+color: blueviolet;
+}
+
 .content {
     grid-area: content;
 }
@@ -44,12 +52,19 @@ padding: 1rem;
     grid-area: socials;
 }
 
+.socials ul li a {
+    color: black;
+}
+.socials ul li a:hover {
+color: blueviolet;
+}
+
 .experience {
     grid-area: experience;
 }
 
 .photo {
-    grid-area: photo
+    grid-area: photo;
 }
 .projects {
     grid-area: projects;
@@ -60,10 +75,11 @@ padding: 1rem;
     text-align: center;
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 575px) {
     .container  {
         grid-template-areas:
         'header'
+        'margin'
         'content'
         'socials'
         'experience'
