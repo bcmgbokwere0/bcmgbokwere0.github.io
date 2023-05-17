@@ -83,7 +83,7 @@ color: blueviolet;
     text-align: center;
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 217px) {
     .container  {
         grid-template-areas:
         'header'
@@ -95,5 +95,9 @@ color: blueviolet;
         'projects'
         'footer'
 
+    }
+    .margin ul li{
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
