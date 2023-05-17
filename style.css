@@ -1,11 +1,15 @@
+/* body {
+    background-image: url(galaxy.jpg)
+} */
+
 .container {
     display: grid;
     grid-template-areas:
     'header header header margin'
     'content content content photo'
-    'socials socials socials socials'
     'experience experience experience experience'
     'projects projects projects projects'
+    'socials socials socials smash'
     'footer footer footer footer';
     gap: 1rem;
 }
@@ -17,6 +21,7 @@
 .experience,
 .photo,
 .projects,
+.smash,
 .footer {
 border: 2px solid #917FB3;
 padding: 1rem;
@@ -70,6 +75,9 @@ color: blueviolet;
     grid-area: projects;
 }
 
+.smash {
+    grid-area: smash;
+}
 .footer {
     grid-area: footer;
     text-align: center;
