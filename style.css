@@ -6,7 +6,7 @@
     display: grid;
     grid-template-areas:
     'header header header margin'
-    'content content content photo'
+    'content content photo photo'
     'experience experience experience experience'
     'projects projects projects projects'
     'socials socials socials smash'
@@ -83,7 +83,7 @@ color: blueviolet;
     text-align: center;
 }
 
-@media(max-width: 300px) {
+@media(max-width: 200px) {
     .container  {
         grid-template-areas:
         'header'
