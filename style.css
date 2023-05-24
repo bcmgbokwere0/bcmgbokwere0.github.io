@@ -15,9 +15,7 @@
 .content,
 .experience,
 .photo,
-.projects,
-/* .smash, */
-.footer {
+.projects {
 border: 2px solid #917FB3;
 padding: 1rem;
 }
@@ -75,9 +73,7 @@ color: blueviolet;
 .projects h3 a:hover{
     color: blueviolet;
 }
-/* .smash {
-    grid-area: smash;
-} */
+
 .footer {
     grid-area: footer;
     text-align: center;
