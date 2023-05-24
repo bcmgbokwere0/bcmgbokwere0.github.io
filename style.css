@@ -5,7 +5,7 @@
     'content content photo photo'
     'experience experience experience experience'
     'projects projects projects projects'
-    'socials socials socials smash'
+    /* 'smash smash smash smash' */
     'footer footer footer footer';
     gap: 1rem;
 }
@@ -13,11 +13,10 @@
 .header,
 .margin,
 .content,
-.socials,
 .experience,
 .photo,
 .projects,
-.smash,
+/* .smash, */
 .footer {
 border: 2px solid #917FB3;
 padding: 1rem;
@@ -49,17 +48,6 @@ color: blueviolet;
     grid-area: content;
 }
 
-.socials {
-    grid-area: socials;
-}
-
-.socials ul li a {
-    color: black;
-}
-.socials ul li a:hover {
-color: blueviolet;
-}
-
 .experience {
     grid-area: experience;
 }
@@ -67,21 +55,29 @@ color: blueviolet;
 .photo {
     grid-area: photo;
 }
+
+.photo ul li a {
+    color: black;
+}
+
+.photo ul li a:hover {
+color: blueviolet;
+}
 .projects {
     grid-area: projects;
 }
 
 .projects h3 a{
-    color: black;
+    color: blue;
     text-decoration: none;
 }
 
 .projects h3 a:hover{
     color: blueviolet;
 }
-.smash {
+/* .smash {
     grid-area: smash;
-}
+} */
 .footer {
     grid-area: footer;
     text-align: center;
